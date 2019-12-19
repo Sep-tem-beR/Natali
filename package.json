@@ -4,7 +4,9 @@
   "description": "",
   "main": "NataliProgect.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --env development",
+    "build": "webpack --env production",
+    "serv": "static build"
   },
   "author": "",
   "license": "ISC",
