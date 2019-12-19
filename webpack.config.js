@@ -10,15 +10,9 @@ const images = require('./webpack/images');
 const fonts = require('./webpack/fonts')
  
 const PATHS = {
-    source: path.resolve(__dirname + '/src/pages'),
+    source: path.resolve(__dirname + '/src'),
     build: path.resolve (__dirname + '/build')
 };
-
-const pages = [
-    // 'Colors_&_Type',
-    // 'form_elements',
-    'Prom_tara'
-];
  
 const common = merge([
     {  
@@ -29,29 +23,18 @@ const common = merge([
         }
       },
 
-    entry: (function() {
-        const entrys = {};
-        pages.forEach(function(item) {
-            entrys[item] = PATHS.source + '/' + item + '/' + item +'.js';
-            });
-        return entrys;
-    }()),
+    entry: {
+        'index': PATHS.source + '/NataliProgect.js',
+    },
 
     output: {
         path: PATHS.build,
         filename: 'js/[name].js'
     },
     plugins: [
-        // new HtmlWebpackPlugin({
-        //     filename: pages[0] + '/index.html',
-        //     template: PATHS.source + '/' + pages[0] + '/' + pages[0] + '.pug',
-        //     chunks: ['Colors_&_Type'],
-        // }),
-
         new HtmlWebpackPlugin({
-            filename: pages[0] + '/index.html',
-            template: PATHS.source + '/' + pages[0] + '/' + pages[0] + '.pug',
-            chunks: ['Prom_tara'],
+            filename: 'NataliProgect.html',
+            template: PATHS.source + '/NataliProgect.pug',
         }),
     ],
     }, 
