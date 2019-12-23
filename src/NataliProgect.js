@@ -1,0 +1,6 @@
+import './NataliProgect.scss'
+import './owl/owl.carousel.css'
+import './owl/owl.theme.default.css'
+import './owl/owl.carousel.min'
+import './owl/animate.css'
+import './owl/owl.theme.green.css'
