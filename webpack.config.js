@@ -33,7 +33,7 @@ const common = merge([
     },
     plugins: [
         new HtmlWebpackPlugin({
-            filename: 'NataliProgect.html',
+            filename: 'index.html',
             template: PATHS.source + '/NataliProgect.pug',
         }),
     ],
