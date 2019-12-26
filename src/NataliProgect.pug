@@ -17,7 +17,7 @@ html(lang="en")
                     li.header__item
                         a.header__link(href='#') Мои работы
                     li.header__item
-                        a.header__link(href='#') Достижения
+                        a.header__link(href='#achievements') Достижения
                     li.header__item
                         a.header__link(href='#') Контакты
 
@@ -28,4 +28,31 @@ html(lang="en")
             .main-content__content-border
                 .main-content__content
                     h1.main-content__headline Драгун Наталья
-                    p.main-content__description дипломированный специалист в области парикмахерского искусства                                                                   
+                    p.main-content__description дипломированный специалист в области парикмахерского искусства 
+
+        section.achievements#achievements
+            h2.achievements__headline Достижения
+            .line
+            .owl-carousel.owl-theme
+                img(src=require('./images/24.09.14 001.jpg'))
+                img(src=require('./images/07.10.14 001.jpg'))
+                img(src=require('./images/09.10.14 001.jpg'))
+                img(src=require('./images/10.10.14 001.jpg'))
+                img(src=require('./images/23.06.15 001.jpg'))
+                img(src=require('./images/24.06.15 001.jpg'))
+                img(src=require('./images/25.09.15 001.jpg'))
+                img(src=require('./images/16.06.17.jpg'))
+                img(src=require('./images/09.11.17 001.jpg'))
+                img(src=require('./images/26.09.17 001.jpg'))
+                img(src=require('./images/19.02.18 001.jpg'))
+                img(src=require('./images/19.02.18 002.jpg'))
+                img(src=require('./images/11.07.18 001.jpg'))
+            .achievements__navigation
+                .prev
+                    <i class="fas fa-7x fa-angle-left"></i>
+                .next
+                    <i class="fas fa-7x fa-angle-right"></i>
+
+
+        
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>                                                                  
