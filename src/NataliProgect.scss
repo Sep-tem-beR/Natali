@@ -91,3 +91,48 @@ html, body {
         font-size: 1.5em;
     }
 }
+
+.line {
+    width: 100px;
+    border-bottom: 1px solid red;
+    margin: 0 auto 60px;
+}
+
+.achievements {
+    margin-top: 60px;
+    
+    &__headline {
+        text-align: center;
+        text-transform: uppercase;
+        margin: 40px 0 20px;
+    }
+
+    &__navigation {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.svg-inline--fa {
+    position: absolute;
+    top: -50vh;
+    z-index: 100;
+    color: #D6D6D6;
+    cursor: pointer;
+
+    &:hover {
+        color: #595856;
+    }
+}
+
+.fa-angle-left {
+    left: 0;
+    margin-left: 60px;
+}
+
+.fa-angle-right {
+    right: 0;
+    margin-right: 60px;
+}
