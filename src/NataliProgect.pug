@@ -13,7 +13,7 @@ html(lang="en")
             .header__menu
                 ul.header__list
                     li.header__item
-                        a.header__link(href='#') Обо мне
+                        a.header__link(href='#about') Обо мне
                     li.header__item
                         a.header__link(href='#') Мои работы
                     li.header__item
@@ -29,30 +29,64 @@ html(lang="en")
                 .main-content__content
                     h1.main-content__headline Драгун Наталья
                     p.main-content__description дипломированный специалист в области парикмахерского искусства 
+        .wrapper
+            section.about#about
+                h2.about__headline обо мне
+                .line
+                .about__wrapper
+                    .about__foto-wrapper
+                        .about__foto
+                            img.about__img(src=require('./images/natali_foto.jpg'))
+                    .about__description
+                        p.about__quotes
+                                | Всегда стараюсь найти индивидуальный подход к каждому клиенту.
+                                | И еще нужно выполнять свою работу на самом высоком уровне
+                        p.about__content 
+                            | Главное достижение - это восторженные отзывы о своей
+                            | работе более чем 2000 довольных клиентов, которые приходят ко мне за красотой,
+                            | уверенностью в себе – и неизменно получают и то, и другое, и бонусом – дружеское общение и
+                            | внимательное отношение.
+                            | В парикмахерском искусстве я уже 13 лет и уверена, что с помощью этого можно подчеркнуть все достоинства
+                            | и подчеркнуть любые особенности внешности.
+                            | И здесь главное - сохранить естественный образ. Я люблю, чтобы все выглядело максимально натурально.
+                            | «Ко мне приходят именно за этим».
+                            | Это возможность всегда и везде успевать и выглядеть всегда на «5 с плюсом», не прилагая больших усилий
+                            | Может быть, поэтому и приходят сюда именно те клиенты, которые ценят свое время и готовы довериться
+                            | опытным рукам мастера.
+                            | В жизни я - очень целеустремленный человек и всегда стараюсь добиваться поставленной цели.
+                            | А стремление к постоянному самосовершенствованию помогает постигать все тонкости и нюансы
+                            | своей профессии. Есть еще один секрет, который помогает мне не переживать о полученном
+                            | результате. В работе я всегда применяет только качественные и проверенные материалы,
+                            | которые являются лидерами на мировом рынке индустрии красоты.
+                            | В финале поделюсь своей формулой успеха:
+                            | «Для меня это - любовь к своей профессии. Трудолюбие, постоянное совершенствование
+                            | своих знаний и навыков. Главное - всегда увидеть и услышать клиента.
+                            | Предложить только лучшее, что подойдёт именно ему.»
 
-        section.achievements#achievements
-            h2.achievements__headline Достижения
-            .line
-            .owl-carousel.owl-theme
-                img(src=require('./images/24.09.14 001.jpg'))
-                img(src=require('./images/07.10.14 001.jpg'))
-                img(src=require('./images/09.10.14 001.jpg'))
-                img(src=require('./images/10.10.14 001.jpg'))
-                img(src=require('./images/23.06.15 001.jpg'))
-                img(src=require('./images/24.06.15 001.jpg'))
-                img(src=require('./images/25.09.15 001.jpg'))
-                img(src=require('./images/16.06.17.jpg'))
-                img(src=require('./images/09.11.17 001.jpg'))
-                img(src=require('./images/26.09.17 001.jpg'))
-                img(src=require('./images/19.02.18 001.jpg'))
-                img(src=require('./images/19.02.18 002.jpg'))
-                img(src=require('./images/11.07.18 001.jpg'))
-            .achievements__navigation
-                .prev
-                    <i class="fas fa-7x fa-angle-left"></i>
-                .next
-                    <i class="fas fa-7x fa-angle-right"></i>
+            section.achievements#achievements
+                h2.achievements__headline Достижения
+                .line
+                .owl-carousel.owl-theme
+                    img(src=require('./images/24.09.14 001.jpg'))
+                    img(src=require('./images/07.10.14 001.jpg'))
+                    img(src=require('./images/09.10.14 001.jpg'))
+                    img(src=require('./images/10.10.14 001.jpg'))
+                    img(src=require('./images/23.06.15 001.jpg'))
+                    img(src=require('./images/24.06.15 001.jpg'))
+                    img(src=require('./images/25.09.15 001.jpg'))
+                    img(src=require('./images/16.06.17.jpg'))
+                    img(src=require('./images/09.11.17 001.jpg'))
+                    img(src=require('./images/26.09.17 001.jpg'))
+                    img(src=require('./images/19.02.18 001.jpg'))
+                    img(src=require('./images/19.02.18 002.jpg'))
+                    img(src=require('./images/11.07.18 001.jpg'))
+                .achievements__navigation
+                    .prev
+                        <i class="fas fa-7x fa-angle-left"></i>
+                    .next
+                        <i class="fas fa-7x fa-angle-right"></i>
 
 
         
+
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>                                                                  
