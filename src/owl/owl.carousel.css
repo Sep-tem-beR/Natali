@@ -9,7 +9,7 @@
 .owl-carousel {
   display: none;
   width: 70vw;
-  height: 80vh;
+  height: 100vh;
   margin: 0 auto;
   -webkit-tap-highlight-color: transparent;
   /* position relative and z-index fix webkit rendering fonts issue */
@@ -32,7 +32,7 @@
   .owl-carousel .owl-stage-outer {
     position: relative;
     overflow: hidden;
-    height: 100%;
+    height: 90%;
     /* fix for flashing background */
     -webkit-transform: translate3d(0px, 0px, 0px); }
   .owl-carousel .owl-wrapper,
